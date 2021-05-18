@@ -1,0 +1,49 @@
+#rennovations-learn-more-button {
+
+}
+
+#rennovations-alert {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+#rennovations-alert p, #rennovations-alert button {
+    margin: 0px;
+}
+
+#report-problems-modal {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#report-problems-modal p, #report-problems-modal img {
+    margin: 8px;
+}
+
+
+h1 {
+    text-align: center;
+    margin: 16px;
+}
+
+.carousel {
+    margin: 16px;
+}
+
+.carousel img {
+    width: 100%;
+}
+
+.carousel-indicators .active {
+    background-color: blueviolet;
+}
+
+/* Add margin to the radio buttons in the cards.
+*/
+.card-group > .card > .btn-group {
+    margin-left: 32px;
+    margin-right: 32px;
+}

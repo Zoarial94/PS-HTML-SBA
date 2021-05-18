@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Hunter's SBA</title>
+
+  <link href="index.css" rel="stylesheet">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:rgb(108, 13, 197);">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./page2.html">Second Page</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./special.html">Special Page</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownRadio" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+              aria-expanded="false">
+              Dropdown Radio
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+              <li>
+                <input type="radio" class="btn-check" name="navbarRadio" id="navbarRadio1" autocomplete="off" checked>
+                <label class="btn btn-outline-primary dropdown-item" for="navbarRadio1">Radio 1</label>
+              </li>
+              <li>
+                <input type="radio" class="btn-check" name="navbarRadio" id="navbarRadio2" autocomplete="off">
+                <label class="btn btn-outline-primary dropdown-item" for="navbarRadio2">Radio 2</label>
+              </li>
+              <li>
+                <input type="radio" class="btn-check" name="navbarRadio" id="navbarRadio3" autocomplete="off">
+                <label class="btn btn-outline-primary dropdown-item" for="navbarRadio3">Radio 3</label>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li>
+                <a class="dropdown-item" href="#">Action</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Another action</a>
+              </li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div id="rennovations-alert" class="alert alert-secondary" role="alert">
+    <p>Heads up! We are currently going though site rennovations!</p>
+    <!-- Button trigger modal -->
+    <button id="rennovations-learn-more-button" type="button" class="btn btn-primary" data-bs-toggle="modal"
+      data-bs-target="#staticBackdrop">
+      Learn More
+    </button>
+  </div>
+
+  <h1>Welcome to my SBA project!</h1>
+
+  <div class="container">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4" class="d-block" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.unsplash.com/photo-1574199960105-38f351ec811c" class="d-block" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.unsplash.com/photo-1478737270239-2f02b77fc618" class="d-block" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="report-problems-modal">
+          <img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad" class="img-fluid">
+          <p>Please report any problems with with report button</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button id="report-problems-button" type="button" class="btn btn-primary">Report</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="card-group">
+    <div class="card">
+      <img
+        src="https://images.unsplash.com/photo-1507838153414-b4b713384a76?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bXVzaWN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
+          This content is a little bit longer.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+      <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+        <label class="btn btn-outline-primary" for="btnradio1">Radio 1</label>
+
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btnradio2">Radio 2</label>
+        <div class="btn-group" role="group" style="position: relative; flex: 1 1 auto;">
+          <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+            data-bs-auto-close="outside" aria-expanded="false">
+            Dropdown
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+            <li>
+              <input type="radio" class="btn-check" name="btnradio3" id="btnradio10" autocomplete="off" checked>
+              <label class="btn btn-outline-primary dropdown-item" for="btnradio10">Radio 1</label>
+            </li>
+            <li>
+              <input type="radio" class="btn-check" name="btnradio3" id="btnradio11" autocomplete="off">
+              <label class="btn btn-outline-primary dropdown-item" for="btnradio11">Radio 2</label>
+            </li>
+            <li>
+              <input type="radio" class="btn-check" name="btnradio3" id="btnradio12" autocomplete="off">
+              <label class="btn btn-outline-primary dropdown-item" for="btnradio12">Radio 3</label>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+      <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+        <input type="radio" class="btn-check" name="btnradio1" id="btnradio4" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btnradio4">Radio 1</label>
+
+        <input type="radio" class="btn-check" name="btnradio1" id="btnradio5" autocomplete="off" checked>
+        <label class="btn btn-outline-primary" for="btnradio5">Radio 2</label>
+
+        <input type="radio" class="btn-check" name="btnradio1" id="btnradio6" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btnradio6">Radio 3</label>
+      </div>
+    </div>
+    <div class="card">
+      <img
+        src="https://images.unsplash.com/photo-1483000805330-4eaf0a0d82da?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8bXVzaWN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
+          This card has even longer content than the first to show that equal height action.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+      <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+        <input type="radio" class="btn-check" name="btnradio2" id="btnradio7" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btnradio7">Radio 1</label>
+
+        <input type="radio" class="btn-check" name="btnradio2" id="btnradio8" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btnradio8">Radio 2</label>
+
+        <input type="radio" class="btn-check" name="btnradio2" id="btnradio9" autocomplete="off" checked>
+        <label class="btn btn-outline-primary" for="btnradio9">Radio 3</label>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+
+
+
+  <script src="index.js"></script>
+
+</body>
+
+</html>

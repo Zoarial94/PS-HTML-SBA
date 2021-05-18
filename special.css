@@ -1,0 +1,25 @@
+img {
+    display: block;
+    margin: auto;
+}
+
+p {
+    margin: 8px 16vw;
+    text-align: center;
+}
+h3 {
+    text-align: center;
+}
+
+form > * {
+    margin: 0px 0px;
+    text-align: left;
+}
+
+form > input {
+    margin-bottom: 8px;
+}
+
+form {
+    margin: 8px 16vw;
+}
