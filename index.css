@@ -1,7 +1,4 @@
-#rennovations-learn-more-button {
-
-}
-
+/* For spacing between text and Learn More */
 #rennovations-alert {
     display: flex;
     justify-content: space-between;
@@ -44,6 +41,7 @@ h1 {
 /* Add margin to the radio buttons in the cards.
 */
 .card-group > .card > .btn-group {
-    margin-left: 32px;
-    margin-right: 32px;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 16px;
 }

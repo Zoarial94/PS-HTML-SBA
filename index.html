@@ -8,13 +8,15 @@
 
   <title>Hunter's SBA</title>
 
-  <link href="index.css" rel="stylesheet">
   <!-- CSS only -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <!-- Load custom CSS after, so it take presedence -->
+  <link href="index.css" rel="stylesheet">
 </head>
 
 <body>
+  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:rgb(108, 13, 197);">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Navbar</a>
@@ -34,8 +36,8 @@
             <a class="nav-link" href="./special.html">Special Page</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownRadio" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside"
-              aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownRadio" role="button"
+              data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
               Dropdown Radio
             </a>
             <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
@@ -82,7 +84,9 @@
       </div>
     </div>
   </nav>
+  <!-- End of nav bar -->
 
+  <!-- Rennovations banner -->
   <div id="rennovations-alert" class="alert alert-secondary" role="alert">
     <p>Heads up! We are currently going though site rennovations!</p>
     <!-- Button trigger modal -->
@@ -94,6 +98,7 @@
 
   <h1>Welcome to my SBA project!</h1>
 
+  <!-- Image carousel -->
   <div class="container">
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
       <div class="carousel-indicators">
@@ -129,7 +134,94 @@
   </div>
 
 
-  <!-- Modal -->
+
+  <!-- Group of cards with radio selectors at the bottom -->
+  <div class="card-group">
+    <!-- Card with nested radio -->
+    <div class="card">
+      <img
+        src="https://images.unsplash.com/photo-1507838153414-b4b713384a76?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bXVzaWN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
+          This content is a little bit longer.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+      <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+        <label class="btn btn-outline-primary" for="btnradio1">👎</label>
+
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btnradio2">👍</label>
+        <!-- Added inline CSS to fix styling -->
+        <div class="btn-group dropdown" role="group" style="position: relative; flex: 1 1 auto;">
+          <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+            data-bs-auto-close="outside" aria-expanded="false">
+            More
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+            <li>
+              <input type="radio" class="btn-check" name="btnradio3" id="btnradio10" autocomplete="off" checked>
+              <label class="btn btn-outline-primary dropdown-item" for="btnradio10">👌</label>
+            </li>
+            <li>
+              <input type="radio" class="btn-check" name="btnradio3" id="btnradio11" autocomplete="off">
+              <label class="btn btn-outline-primary dropdown-item" for="btnradio11">🤌</label>
+            </li>
+            <li>
+              <input type="radio" class="btn-check" name="btnradio3" id="btnradio12" autocomplete="off">
+              <label class="btn btn-outline-primary dropdown-item" for="btnradio12">🤟</label>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Card -->
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+      <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+        <input type="radio" class="btn-check" name="btnradio1" id="btnradio4" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btnradio4">👎</label>
+
+        <input type="radio" class="btn-check" name="btnradio1" id="btnradio5" autocomplete="off" checked>
+        <label class="btn btn-outline-primary" for="btnradio5">👍</label>
+
+        <input type="radio" class="btn-check" name="btnradio1" id="btnradio6" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btnradio6">🤟</label>
+        </label>
+      </div>
+    </div>
+    <!-- Card -->
+    <div class="card">
+      <img
+        src="https://images.unsplash.com/photo-1483000805330-4eaf0a0d82da?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8bXVzaWN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
+          This card has even longer content than the first to show that equal height action.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+      <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+        <input type="radio" class="btn-check" name="btnradio2" id="btnradio7" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btnradio7">👎</label>
+
+        <input type="radio" class="btn-check" name="btnradio2" id="btnradio8" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btnradio8">👍</label>
+
+        <input type="radio" class="btn-check" name="btnradio2" id="btnradio9" autocomplete="off" checked>
+        <label class="btn btn-outline-primary" for="btnradio9">🤟</label>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal (Could be placed anywhere since its hidden) -->
   <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
     aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -150,94 +242,10 @@
     </div>
   </div>
 
-
-  <div class="card-group">
-    <div class="card">
-      <img
-        src="https://images.unsplash.com/photo-1507838153414-b4b713384a76?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bXVzaWN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-        class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
-          This content is a little bit longer.</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-      </div>
-      <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-        <label class="btn btn-outline-primary" for="btnradio1">Radio 1</label>
-
-        <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-        <label class="btn btn-outline-primary" for="btnradio2">Radio 2</label>
-        <div class="btn-group" role="group" style="position: relative; flex: 1 1 auto;">
-          <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
-            data-bs-auto-close="outside" aria-expanded="false">
-            Dropdown
-          </button>
-          <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-            <li>
-              <input type="radio" class="btn-check" name="btnradio3" id="btnradio10" autocomplete="off" checked>
-              <label class="btn btn-outline-primary dropdown-item" for="btnradio10">Radio 1</label>
-            </li>
-            <li>
-              <input type="radio" class="btn-check" name="btnradio3" id="btnradio11" autocomplete="off">
-              <label class="btn btn-outline-primary dropdown-item" for="btnradio11">Radio 2</label>
-            </li>
-            <li>
-              <input type="radio" class="btn-check" name="btnradio3" id="btnradio12" autocomplete="off">
-              <label class="btn btn-outline-primary dropdown-item" for="btnradio12">Radio 3</label>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-      </div>
-      <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-        <input type="radio" class="btn-check" name="btnradio1" id="btnradio4" autocomplete="off">
-        <label class="btn btn-outline-primary" for="btnradio4">Radio 1</label>
-
-        <input type="radio" class="btn-check" name="btnradio1" id="btnradio5" autocomplete="off" checked>
-        <label class="btn btn-outline-primary" for="btnradio5">Radio 2</label>
-
-        <input type="radio" class="btn-check" name="btnradio1" id="btnradio6" autocomplete="off">
-        <label class="btn btn-outline-primary" for="btnradio6">Radio 3</label>
-      </div>
-    </div>
-    <div class="card">
-      <img
-        src="https://images.unsplash.com/photo-1483000805330-4eaf0a0d82da?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8bXVzaWN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-        class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
-          This card has even longer content than the first to show that equal height action.</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-      </div>
-      <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-        <input type="radio" class="btn-check" name="btnradio2" id="btnradio7" autocomplete="off">
-        <label class="btn btn-outline-primary" for="btnradio7">Radio 1</label>
-
-        <input type="radio" class="btn-check" name="btnradio2" id="btnradio8" autocomplete="off">
-        <label class="btn btn-outline-primary" for="btnradio8">Radio 2</label>
-
-        <input type="radio" class="btn-check" name="btnradio2" id="btnradio9" autocomplete="off" checked>
-        <label class="btn btn-outline-primary" for="btnradio9">Radio 3</label>
-      </div>
-    </div>
-  </div>
-
   <!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
     crossorigin="anonymous"></script>
-
-
-
   <script src="index.js"></script>
 
 </body>
